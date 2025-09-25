@@ -8,6 +8,13 @@ window.addEventListener("scroll", () => {
     }
 });
 
+const label = document.querySelector(".label")
+const menu = document.querySelector(".menu")
+
+label.addEventListener("click", () => {
+    menu.classList.toggle("active");
+});
+
 var swiper = new Swiper(".slide-content", {
     slidesPerView: 3,
     spaceBetween: 25,
@@ -75,4 +82,5 @@ createOdometer(inventOdometer,6);
 
 const otroOdometer = document.querySelector(".Otro");
 createOdometer(otroOdometer,127);
+
 
