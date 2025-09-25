@@ -185,6 +185,7 @@ nav.menu.active ul li {
 }
 
 }
+
 #seccion1 {
     height: fit-content;
     width: 100%;
@@ -198,13 +199,13 @@ nav.menu.active ul li {
     justify-content: center;
     bottom: 0px;
     width: 100%;
-    padding-bottom: 35px;
+    padding: 0 60px 35px 60px;
+    box-sizing: border-box;
 }
 
 #seccion1 .text1-container{
     display: flex;
     flex-direction: column;
-    align-items: left;
     justify-content: center;
     left: 100%;
     gap:35px;
@@ -262,6 +263,30 @@ nav.menu.active ul li {
     height: 480px;
     width: 100%;
     background-color: #DEDEDE;
+}
+
+@media (max-width:760px) {
+
+    #seccion1 .complement{
+        flex-wrap: wrap;
+    }
+    #seccion1  .background{
+    height: 660px;
+    }
+    #seccion1 .text1-container{
+    height: fit-content;
+    }
+    #seccion1 .img1{
+    height: 300px;
+    width: 500px ;
+    }
+    #seccion1 .text-complement{
+    align-items: center;
+}
+    #seccion1 .text1, #seccion1 .text2{
+    width: 500px;
+    box-sizing: border-box;
+}
 }
 
 #seccion2 {
@@ -1159,4 +1184,5 @@ footer .footer address a {
     height: fit-content;
 }
 }
+
 
