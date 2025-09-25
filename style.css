@@ -214,6 +214,110 @@ nav.menu.active ul li {
 
 #seccion1 .title1{
     color:white;
+    max-width: 600px;
+    height: fit-content;
+    padding:0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#seccion1 .img1{
+    height: 100%;
+    width: 100%;
+    background-color:#E87817 ;
+}
+
+#seccion1 .complement{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 30px;
+}
+
+#seccion1 .text-complement{
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    gap:30px;
+    box-sizing: border-box;
+
+}
+
+#seccion1 .text1, #seccion1 .text2{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 30px;
+    gap: 8px;
+}
+
+#seccion1  .placeholder{
+    height: 620px;
+    width: 100%;
+    background-color:#0094DE ;
+}
+#seccion1  .background{
+    height: 480px;
+    width: 100%;
+    background-color: #DEDEDE;
+}
+
+@media (max-width:760px) {
+
+    #seccion1 .complement{
+        flex-wrap: wrap;
+    }
+    #seccion1  .background{
+    height: 660px;
+    }
+    #seccion1 .text1-container{
+    height: fit-content;
+    }
+    #seccion1 .img1{
+    height: 300px;
+    max-width: 350px ;
+    }
+    #seccion1 .text-complement{
+    align-items: center;
+}
+    #seccion1 .text1, #seccion1 .text2{
+    max-width:500px;
+    box-sizing: border-box;
+}
+}
+
+
+#seccion1 {
+    height: fit-content;
+    width: 100%;
+    background: transparent;
+    position:relative;
+}
+
+#seccion1 .primary-text {
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 0px;
+    width: 100%;
+    padding: 0 60px 35px 60px;
+    box-sizing: border-box;
+}
+
+#seccion1 .text1-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: 100%;
+    gap:35px;
+    width: 917px;
+}
+
+#seccion1 .title1{
+    color:white;
     width: 600px;
     height: fit-content;
     padding:0;
@@ -1184,5 +1288,6 @@ footer .footer address a {
     height: fit-content;
 }
 }
+
 
 
