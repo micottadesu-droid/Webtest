@@ -131,6 +131,60 @@ h3 {
     text-decoration: none;
 }
 
+.label{
+    color: #0094DE;
+    display: none;
+    cursor: pointer
+}
+#check{
+    display: none;
+}
+@media (max-width:822px) {
+header .container.header{
+    background-color: white;
+    transition: 0.5s ease;
+    color: #0094DE;
+}
+
+.label{
+    display: block;
+}
+nav{
+    position: absolute;
+    top:100%;
+    left:0;
+    width: 100%;
+    height:0;
+    background-color: white;
+    flex-direction: column;
+
+}
+
+nav.menu.active {
+    height: fit-content;
+}
+nav ul li a {
+    color: #0094DE;
+}
+nav ul {
+    flex-direction: column;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+nav.menu.active ul {
+    height: fit-content;
+    display: block;
+}
+
+nav.menu.active ul li {
+    width: fit-content;
+    align-self: center;
+    justify-self: center;
+}
+
+}
 #seccion1 {
     height: fit-content;
     width: 100%;
@@ -1105,3 +1159,4 @@ footer .footer address a {
     height: fit-content;
 }
 }
+
