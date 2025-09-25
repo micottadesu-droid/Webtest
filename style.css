@@ -176,12 +176,14 @@ nav ul {
 nav.menu.active ul {
     height: fit-content;
     display: block;
+
 }
 
 nav.menu.active ul li {
     width: fit-content;
     align-self: center;
     justify-self: center;
+    padding: 20px;
 }
 
 }
@@ -271,7 +273,7 @@ nav.menu.active ul li {
         flex-wrap: wrap;
     }
     #seccion1  .background{
-    height: 660px;
+    height: 830px;
     }
     #seccion1 .text1-container{
     height: fit-content;
