@@ -318,7 +318,7 @@ nav.menu.active ul li {
 
 #seccion1 .title1{
     color:white;
-    width: 600px;
+    max-width: 600px;
     height: fit-content;
     padding:0;
     display: flex;
@@ -1288,6 +1288,7 @@ footer .footer address a {
     height: fit-content;
 }
 }
+
 
 
 
