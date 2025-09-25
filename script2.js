@@ -8,6 +8,13 @@ window.addEventListener("scroll", () => {
     }
 });
 
+const label = document.querySelector(".label")
+const menu = document.querySelector(".menu")
+
+label.addEventListener("click", () => {
+    menu.classList.toggle("active");
+});
+
 const createOdometer = (el,value)=>{
     const odometer = new Odometer({
         el: el,
@@ -50,3 +57,4 @@ createOdometer(copOdometer,216954041254);
 
 const smlmvOdometer = document.querySelector(".SMLMV");
 createOdometer(smlmvOdometer,252354);
+
