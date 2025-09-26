@@ -488,9 +488,10 @@ nav.menu.active ul li {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 40px 0;
+    padding: 40px 30px;
     background-color: #DEDEDE;
     gap: 80px;
+
 }
 #seccion7 .sec1{
     display: flex;
@@ -502,14 +503,15 @@ nav.menu.active ul li {
 }
 #seccion7 .img3{
     height: 350px;
-    width: 430px;
+    max-width: 430px;
+    width: 100%;
     background-color: #E87817;
 }
 #seccion7 .quienes-somos{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 430px;
+    max-width: 430px;
 }
 #seccion7 .sub-title1{
     font-size: 16px;
@@ -532,7 +534,8 @@ nav.menu.active ul li {
 #seccion7 .tarjeta{
     display: flex;
     flex-direction: column;
-    width: 330px;
+    max-width: 330px;
+    width: 100%;
     position: relative;
 }
 #seccion7 .ico{
@@ -673,6 +676,38 @@ nav.menu.active ul li {
     height: 220px;
     background-color: #A1A1A1;
 }
+@media (max-width: 1382px) and (min-width: 1123px){
+    #seccion9 .line.d{
+        display: none;
+    }
+}
+@media (max-width: 1122px) and (min-width: 861px){
+    #seccion9 .line.c{
+        display: none;
+    }
+}
+@media (max-width: 860px) and (min-width: 601px){
+    #seccion9 .line.b{
+        display: none;
+    }
+    #seccion9 .line.d{
+        display: none;
+    }
+}
+@media (max-width: 600px) {
+    #seccion9 .line.a{
+        display: none;
+    }
+    #seccion9 .line.b{
+        display: none;
+    }
+    #seccion9 .line.c{
+        display: none;
+    }
+    #seccion9 .line.d{
+        display: none;
+    }
+}
 #seccion9 .valor{
     display: flex;
     flex-direction: column;
@@ -704,7 +739,6 @@ nav.menu.active ul li {
     background: linear-gradient(to right, white, #CAE8FF,white);
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     gap: 30px;
     box-sizing: border-box;
@@ -723,6 +757,13 @@ nav.menu.active ul li {
     text-align: center;
 }
 
+@media (max-width: 443px) {
+    #seccion10 .title5 p{
+        letter-spacing: 5px;
+    }
+    
+}
+
 #seccion10 .cards{
     display: flex;
     flex-direction: row;
@@ -738,7 +779,7 @@ nav.menu.active ul li {
     justify-content: flex-start;
     align-items: flex-start;
     gap: 15px;
-    width: 310px;
+    flex: 0 1 310px;
     height: 210px;
     background-color: #45A5EA;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -754,6 +795,7 @@ nav.menu.active ul li {
     justify-content: center;
     align-items: center;
     border-radius: 14px;
+    box-sizing: border-box;
 }
 
 #seccion10 .card img{
@@ -774,8 +816,14 @@ nav.menu.active ul li {
     align-items: center;
     align-self: flex-end;
     gap: 10px;
+    
 }
 
+@media (max-width: 340px) {
+    #seccion10 .row{
+        flex-wrap: wrap;
+    }
+}
 #seccion10 .sub-title2{
     font-size: 16px;
     font-weight: 300;
@@ -1204,4 +1252,3 @@ footer .footer address a {
     height: fit-content;
 }
 }
-
