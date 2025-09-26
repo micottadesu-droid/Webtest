@@ -577,12 +577,12 @@ nav.menu.active ul li {
     box-sizing: border-box;
     background-color: white;
     width: 100%;
-    height: 200px;
+    min-height: 200px;
     color: #727272;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 35px 20px 20px 20px; 
 }
 #seccion7 .parrafo2 p {
     text-align: center;
@@ -1200,8 +1200,9 @@ footer {
 footer .footer {
     margin: 0;
     height: 140px;
-    width: 295px;
+    flex: 0 1 295px;
     background-color:transparent;
+    display: flex;
 }
 footer .footer ul {
     list-style: none;
